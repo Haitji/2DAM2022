@@ -1,0 +1,67 @@
+package AP1;
+
+import java.util.Scanner;
+
+public class ej10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		System.out.print("Introduce el numero del mes: ");
+		int num1;
+		do {
+			num1 = s.nextInt();
+			if(num1<1||num1>12) {
+				System.out.print("Debes introducir un numero del 1 al 12: ");
+			}else {
+				break;
+			}
+
+		}while(num1<1||num1>12);
+		String mes;
+		switch (num1) {
+		case 1:
+			mes="Enero";
+			break;
+		case 2:
+			mes="Febrero";
+			break;
+		case 3:
+			mes="Marzo";
+			break;
+		case 4:
+			mes="Abril";
+			break;
+		case 5:
+			mes="Mayo";
+			break;
+		case 6:
+			mes="Junio";
+			break;
+		case 7:
+			mes="Julio";
+			break;
+		case 8:
+			mes="Agosto";
+			break;
+		case 9:
+			mes="Septiembre";
+			break;
+		case 10:
+			mes="Octubre";
+			break;
+		case 11:
+			mes="Noviembre";
+			break;
+		case 12:
+			mes="Diciembre";
+			break;
+		default:
+			mes="El mes introducido no es valido.";
+			break;
+		}
+		System.out.println(mes);
+
+	}
+
+}
